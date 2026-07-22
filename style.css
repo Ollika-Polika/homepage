@@ -300,22 +300,27 @@ section h2 {
 .timeline-item,
 .skill-group,
 .tool-group {
-  background: var(--color-surface);
+    background: var(--color-surface);
 
-  border-radius: var(--border-radius);
+    padding: 1.8rem;
 
-  padding: 1.5rem;
+    border-radius: var(--border-radius);
 
-  margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,255,255,.06);
 
-  transition: var(--transition);
-
-  border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: var(--transition);
 }
 .timeline-item:hover,
 .skill-group:hover,
 .tool-group:hover {
   transform: translateY(-4px);
+}
+.tool-group:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--color-primary);
+
 }
 .timeline-item h3,
 .skill-group h3,
@@ -323,6 +328,13 @@ section h2 {
   margin-bottom: 0.8rem;
 
   color: var(--color-primary);
+}
+.tool-group h3 {
+
+    color: var(--color-primary);
+
+    margin-bottom: 1rem;
+
 }
 .skill-group ul,
 .tool-group ul,
@@ -418,11 +430,17 @@ section h2 {
 }
 
 .tool-group ul {
-  list-style-position: inside;
+  
+  list-style: none;
+
+  padding: 0;
 }
 
 .tool-group li {
-  margin-bottom: 0.6rem;
+  
+  margin-bottom: .7rem;
+
+  color: var(--color-text-secondary);
 }
 
 /* ===================================================== */
@@ -623,5 +641,19 @@ footer {
 .navbar a:hover {
 
     color: var(--color-primary);
+
+}
+
+/* ===================================================== */
+/*              TOOLS & TECHNOLOGIES                      */
+/* ===================================================== */
+
+.toolkit-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 2rem;
 
 }
