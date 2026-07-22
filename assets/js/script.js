@@ -74,3 +74,29 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+/* ===================================================== */
+/*                 COPY EMAIL                             */
+/* ===================================================== */
+
+const copyEmail = document.getElementById("copyEmail");
+
+const toast = document.getElementById("toast");
+
+copyEmail.addEventListener("click", (event) => {
+
+    event.preventDefault();
+
+    const email = copyEmail.dataset.email;
+
+    navigator.clipboard.writeText(email);
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 2000);
+
+});

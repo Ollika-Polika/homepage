@@ -1110,3 +1110,42 @@ footer {
     visibility: visible;
 
 }
+
+/* ===================================================== */
+/*                      TOAST                             */
+/* ===================================================== */
+
+#toast {
+
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 2rem;
+
+    transform: translateX(-50%);
+
+    background: var(--color-primary);
+
+    color: white;
+
+    padding: .9rem 1.4rem;
+
+    border-radius: 999px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    z-index: 1001;
+
+}
+#toast.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
