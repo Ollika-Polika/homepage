@@ -363,3 +363,91 @@ section h2 {
 .resume {
   padding: 3rem 0;
 }
+
+/* ===================================================== */
+/*                    JOURNEY                             */
+/* Timeline section                                       */
+/* ===================================================== */
+
+.timeline {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.timeline-period {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-primary);
+
+  font-weight: 600;
+}
+/* ===================================================== */
+/*                TESTING EXPERTISE                       */
+/* ===================================================== */
+
+.testing {
+  margin-bottom: 5rem;
+}
+
+.skill-group {
+  margin-bottom: 2rem;
+}
+
+.skill-group ul {
+  list-style-position: inside;
+}
+
+.skill-group li {
+  margin-bottom: 0.6rem;
+}
+/* ===================================================== */
+/*              TOOLS & TECHNOLOGIES                      */
+/* ===================================================== */
+
+.tool-group {
+  margin-bottom: 2rem;
+}
+
+.tool-group ul {
+  list-style-position: inside;
+}
+
+.tool-group li {
+  margin-bottom: 0.6rem;
+}
+/* ===================================================== */
+/*                    EDUCATION                           */
+/* ===================================================== */
+
+.education ul {
+  list-style-position: inside;
+}
+
+.education li {
+  margin-bottom: 1rem;
+}
+/* ===================================================== */
+/*                    LANGUAGES                           */
+/* ===================================================== */
+
+.languages ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+.languages li {
+  margin-bottom: 0.8rem;
+}
+/* ===================================================== */
+/*                BEYOND THE SCREEN                       */
+/* ===================================================== */
+
+.beyond p {
+  margin-bottom: 1rem;
+}
