@@ -650,6 +650,63 @@ to bottom,
   margin-bottom: 1rem;
 }
 
+.interests-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 2rem;
+
+}
+
+.interest-card {
+
+    background: var(--color-surface);
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    border-radius: var(--border-radius);
+
+    padding: 2rem;
+
+    text-align: center;
+
+    transition: var(--transition);
+
+}
+
+.interest-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--color-primary);
+
+    box-shadow: 0 8px 24px rgba(96,165,250,.15);
+
+}
+
+.interest-card i {
+
+    font-size: 2rem;
+
+    color: var(--color-primary);
+
+    margin-bottom: 1rem;
+
+}
+
+.interest-card h3 {
+
+    margin-bottom: 1rem;
+
+}
+
+.interest-card p {
+
+    color: var(--color-text-secondary);
+
+}
 /* ===================================================== */
 /*                  LISTS                                 */
 /* Shared list styles                                     */
