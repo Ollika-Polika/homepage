@@ -877,6 +877,13 @@ footer {
     color: var(--color-primary);
 
 }
+.navbar a.active {
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+}
 
 /* ===================================================== */
 /*              TOOLS & TECHNOLOGIES                      */
