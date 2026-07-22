@@ -887,3 +887,163 @@ footer {
     gap: 2rem;
 
 }
+
+/* ===================================================== */
+/*                  RESPONSIVE DESIGN                     */
+/* ===================================================== */
+
+@media (max-width: 992px) {
+
+    .container {
+
+        width: min(94%, var(--container-width));
+
+    }
+
+    .hero {
+
+        text-align: center;
+
+    }
+
+    .hero-content {
+
+        align-items: center;
+
+    }
+
+}
+@media (max-width: 768px) {
+
+    h1 {
+
+        font-size: 2.4rem;
+
+    }
+
+    h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .resume {
+
+        padding: 2rem 1rem;
+
+    }
+
+}
+
+/*Navigation*/
+@media (max-width: 768px) {
+
+    .navbar {
+
+        gap: .8rem;
+
+        justify-content: center;
+
+        padding: 1rem;
+
+    }
+
+    .navbar a {
+
+        font-size: .95rem;
+
+    }
+
+}
+/*Timeline*/
+@media (max-width: 768px) {
+
+    .timeline::before {
+
+        left: 8px;
+
+    }
+
+    .timeline-item {
+
+        margin-left: 2rem;
+
+    }
+
+    .timeline-item::before {
+
+        left: -31px;
+
+    }
+
+}
+/*Cards*/
+@media (max-width: 768px) {
+
+    .toolkit-grid,
+    .languages-grid,
+    .interests-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/*Avatar*/
+@media (max-width: 768px) {
+
+    .avatar {
+
+        width: 170px;
+
+        height: 170px;
+
+    }
+
+}
+/*Hero*/
+@media (max-width: 576px) {
+
+    h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .job-title {
+
+        font-size: 1.2rem;
+
+    }
+
+    .hero-subtitle {
+
+        font-size: 1rem;
+
+    }
+
+}
+/*Contacts*/
+@media (max-width: 576px) {
+
+    .contacts {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: .8rem;
+
+    }
+
+}
+/*Section spacing*/
+@media (max-width: 576px) {
+
+    section {
+
+        margin-top: 3rem;
+
+    }
+
+}
