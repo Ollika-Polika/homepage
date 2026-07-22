@@ -1051,3 +1051,55 @@ footer {
     }
 
 }
+
+/* ===================================================== */
+/*                  BACK TO TOP                           */
+/* ===================================================== */
+
+#backToTop {
+
+    position: fixed;
+
+    right: 2rem;
+
+    bottom: 2rem;
+
+    width: 52px;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+
+    z-index: 1000;
+
+}
+#backToTop:hover {
+
+    transform: translateY(-4px);
+
+}
+#backToTop.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
