@@ -834,9 +834,9 @@ footer {
 
     position: sticky;
 
-    top: 1rem;
+    top: 0;
 
-    z-index: 1000;
+    z-index: 100;
 
     display: flex;
 
@@ -850,13 +850,17 @@ footer {
 
     padding: 1.1rem 2.5rem;
 
-    background: rgba(15, 23, 42, .98);
+    background: rgba(15, 23, 42, .85);
 
     backdrop-filter: blur(12px);
 
     border: 1px solid rgba(255,255,255,.08);
 
     border-radius: var(--border-radius);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
 
 }
 .navbar a {
@@ -871,6 +875,13 @@ footer {
 .navbar a:hover {
 
     color: var(--color-primary);
+
+}
+.navbar a.active {
+
+    color: var(--color-primary);
+
+    font-weight: 600;
 
 }
 
@@ -1045,5 +1056,96 @@ footer {
         margin-top: 3rem;
 
     }
+
+}
+
+/* ===================================================== */
+/*                  BACK TO TOP                           */
+/* ===================================================== */
+
+#backToTop {
+
+    position: fixed;
+
+    right: 2rem;
+
+    bottom: 2rem;
+
+    width: 52px;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+
+    z-index: 1000;
+
+}
+#backToTop:hover {
+
+    transform: translateY(-4px);
+
+}
+#backToTop.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+/* ===================================================== */
+/*                      TOAST                             */
+/* ===================================================== */
+
+#toast {
+
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 2rem;
+
+    transform: translateX(-50%);
+
+    background: var(--color-primary);
+
+    color: white;
+
+    padding: .9rem 1.4rem;
+
+    border-radius: 999px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    z-index: 1001;
+
+}
+#toast.show {
+
+    opacity: 1;
+
+    visibility: visible;
 
 }
